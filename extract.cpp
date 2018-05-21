@@ -7,12 +7,12 @@ int main(int argc, char** argv)
 
 	if (argc>4)
 	{
-		cerr << "Error: too many arguments. Please refer to the README for usage." << endl;
+		cerr << "Erreur." << endl;
 		return EXIT_FAILURE;
 	}
 	if (argc<3)
 	{
-		cerr << "Error: not enough arguments. Please refer to the README for usage." << endl;
+		cerr << "Erreur" << endl;
 		return EXIT_FAILURE;
 	}
 
@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 	float threshold = 1000;
 
 	if (argc == 4)
-		threshold = atoi(argv[3]);; // Peut etre modifié pour la detection du hessien
+		threshold = atoi(argv[3]);; // Peut etre modifiÃ© pour la detection du hessien
 
 									// input de l'image
 	string imgName = argv[1];
